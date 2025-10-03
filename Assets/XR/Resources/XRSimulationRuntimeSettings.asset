@@ -60,7 +60,7 @@ MonoBehaviour:
     m_MinUpdateTime: 0.2
     m_MaxDiscoveryDistance: 3
     m_DiscoveryDelayTime: 1
-    m_CubemapFaceSize: 16
+    m_CubemapFaceSize: 32
   m_AnchorDiscoveryParams:
     m_MinTimeUntilUpdate: 0.2
   m_BoundingBoxDiscoveryParams:
