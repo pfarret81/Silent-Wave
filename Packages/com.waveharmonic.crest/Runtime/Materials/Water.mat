@@ -41,11 +41,11 @@ Material:
   m_Parent: {fileID: -876546973899608171, guid: 00ffe7d0b7161420897069dc6e12822c, type: 3}
   m_ModifiedSerializedProperties: 16
   m_ValidKeywords:
+  - _ALPHATEST_ON
   - _BUILTIN_ALPHATEST_ON
   - _BUILTIN_AlphaClip
   - _BUILTIN_SURFACE_TYPE_TRANSPARENT
   - _BUILTIN_TRANSPARENT_RECEIVES_SHADOWS
-  - _RECEIVE_SHADOWS_OFF
   - _SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords:
   - _DOUBLESIDED_ON
@@ -69,7 +69,6 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _AlphaClip: 0
     - _AlphaDstBlend: 10
     - _AlphaToMask: 0
     - _BUILTIN_DstBlend: 10
@@ -81,7 +80,7 @@ Material:
     - _CastShadows: 0
     - _Crest_AlbedoEnabled: 0
     - _Crest_AmbientTerm: 1.99
-    - _Crest_Anisotropy: 0.238
+    - _Crest_Anisotropy: 0.553
     - _Crest_CausticsDepthOfField: 1.62
     - _Crest_CausticsEnabled: 1
     - _Crest_CausticsFocalDepth: 11.9
@@ -90,23 +89,18 @@ Material:
     - _Crest_CausticsTextureScale: 42.6
     - _Crest_DirectTerm: 3.08
     - _Crest_NormalsStrengthOverall: 0.839
-    - _Crest_Occlusion: 0.772
-    - _Crest_OcclusionUnderwater: 0.128
-    - _Crest_PlanarReflectionsEnabled: 1
     - _Crest_RefractionStrength: 1.05
     - _Crest_SSSEnabled: 0
-    - _Crest_ShadowsAffectsAmbientFactor: 0.55
-    - _Crest_ShadowsEnabled: 0
-    - _Crest_Smoothness: 0.806
-    - _Crest_SmoothnessFar: 0.431
+    - _Crest_ShadowsAffectsAmbientFactor: 0.624
+    - _Crest_ShadowsEnabled: 1
+    - _Crest_SmoothnessFar: 0.659
     - _Crest_SmoothnessFarDistance: 5127
-    - _Cull: 2
+    - _Cull: 0
     - _CullMode: 0
     - _CullModeForward: 0
     - _DstBlend: 10
     - _DstBlendAlpha: 10
     - _QueueControl: 0
-    - _ReceiveShadows: 0
     - _RefractionModel: 0
     - _SrcBlend: 5
     - _SrcBlendAlpha: 1
@@ -114,9 +108,8 @@ Material:
     - _ZTestGBuffer: 3
     - _ZWrite: 1
     m_Colors:
-    - _Crest_Absorption: {r: 0.12282723, g: 0.10176177, b: 0.06552742, a: 1}
-    - _Crest_AbsorptionColor: {r: 0.4970185, g: 0.56033283, b: 0.6886792, a: 0.02745098}
-    - _Crest_Scattering: {r: 0, g: 0.09803913, b: 0.1999999, a: 1}
+    - _Crest_Absorption: {r: 1.7071835, g: 0.6655005, b: 0.3510582, a: 1}
+    - _Crest_AbsorptionColor: {r: 0.2703364, g: 0.60054135, b: 0.764151, a: 0.20392157}
     - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
