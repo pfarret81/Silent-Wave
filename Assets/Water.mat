@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5994654682710206810
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 13
+  hdPluginSubTargetMaterialVersions:
+    m_Keys: []
+    m_Values: 
+--- !u!114 &-4042563326011365698
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 10
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Water
+  m_Shader: {fileID: -6465566751694194690, guid: 00ffe7d0b7161420897069dc6e12822c, type: 3}
+  m_Parent: {fileID: -876546973899608171, guid: 00ffe7d0b7161420897069dc6e12822c, type: 3}
+  m_ModifiedSerializedProperties: 16
+  m_ValidKeywords:
+  - _BUILTIN_ALPHATEST_ON
+  - _BUILTIN_AlphaClip
+  - _BUILTIN_SURFACE_TYPE_TRANSPARENT
+  - _BUILTIN_TRANSPARENT_RECEIVES_SHADOWS
+  - _RECEIVE_SHADOWS_OFF
+  - _SURFACE_TYPE_TRANSPARENT
+  m_InvalidKeywords:
+  - _DOUBLESIDED_ON
+  - _ENABLE_FOG_ON_TRANSPARENT
+  - _TRANSPARENT_WRITES_MOTION_VEC
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    MotionVector: User
+    RenderType: Transparent
+  disabledShaderPasses:
+  - TransparentDepthPostpass
+  - TransparentBackface
+  - RayTracingPrepass
+  - SHADOWCASTER
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _AlphaClip: 0
+    - _AlphaDstBlend: 10
+    - _AlphaToMask: 0
+    - _BUILTIN_DstBlend: 10
+    - _BUILTIN_QueueControl: 0
+    - _BUILTIN_SrcBlend: 5
+    - _BUILTIN_ZWrite: 1
+    - _Blend: 0
+    - _BlendModePreserveSpecular: 0
+    - _CastShadows: 0
+    - _Crest_AlbedoEnabled: 0
+    - _Crest_AmbientTerm: 1.99
+    - _Crest_Anisotropy: 0.238
+    - _Crest_CausticsDepthOfField: 1.62
+    - _Crest_CausticsEnabled: 1
+    - _Crest_CausticsFocalDepth: 11.9
+    - _Crest_CausticsStrength: 4.57
+    - _Crest_CausticsTextureAverage: 0.113
+    - _Crest_CausticsTextureScale: 42.6
+    - _Crest_DirectTerm: 3.08
+    - _Crest_NormalsStrengthOverall: 0.812
+    - _Crest_Occlusion: 0.772
+    - _Crest_OcclusionUnderwater: 0.128
+    - _Crest_PlanarReflectionsEnabled: 1
+    - _Crest_RefractionStrength: 1.05
+    - _Crest_SSSEnabled: 0
+    - _Crest_ShadowsAffectsAmbientFactor: 0.55
+    - _Crest_ShadowsEnabled: 0
+    - _Crest_Smoothness: 0.806
+    - _Crest_SmoothnessFar: 0.431
+    - _Crest_SmoothnessFarDistance: 5127
+    - _Cull: 0
+    - _CullMode: 0
+    - _CullModeForward: 0
+    - _DstBlend: 10
+    - _DstBlendAlpha: 10
+    - _QueueControl: 0
+    - _ReceiveShadows: 0
+    - _RefractionModel: 0
+    - _SrcBlend: 5
+    - _SrcBlendAlpha: 1
+    - _Surface: 1
+    - _ZTest: 4
+    - _ZTestGBuffer: 3
+    - _ZWrite: 1
+    m_Colors:
+    - _Crest_Absorption: {r: 0.12282723, g: 0.10176177, b: 0.06552742, a: 1}
+    - _Crest_AbsorptionColor: {r: 0.4970185, g: 0.56033283, b: 0.6886792, a: 0.02745098}
+    - _Crest_Scattering: {r: 0, g: 0.09803913, b: 0.1999999, a: 1}
+    - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!114 &4748330692745026848
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 0
