@@ -39,7 +39,7 @@ Material:
   m_Name: Water
   m_Shader: {fileID: -6465566751694194690, guid: 00ffe7d0b7161420897069dc6e12822c, type: 3}
   m_Parent: {fileID: -876546973899608171, guid: 00ffe7d0b7161420897069dc6e12822c, type: 3}
-  m_ModifiedSerializedProperties: 0
+  m_ModifiedSerializedProperties: 16
   m_ValidKeywords:
   - _ALPHATEST_ON
   - _BUILTIN_ALPHATEST_ON
@@ -70,10 +70,32 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaDstBlend: 10
+    - _AlphaToMask: 0
     - _BUILTIN_DstBlend: 10
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_SrcBlend: 5
     - _BUILTIN_ZWrite: 1
+    - _Blend: 0
+    - _BlendModePreserveSpecular: 0
+    - _CastShadows: 0
+    - _Crest_AlbedoEnabled: 0
+    - _Crest_AmbientTerm: 1.99
+    - _Crest_Anisotropy: 0.553
+    - _Crest_CausticsDepthOfField: 1.62
+    - _Crest_CausticsEnabled: 1
+    - _Crest_CausticsFocalDepth: 11.9
+    - _Crest_CausticsStrength: 4.57
+    - _Crest_CausticsTextureAverage: 0.113
+    - _Crest_CausticsTextureScale: 42.6
+    - _Crest_DirectTerm: 3.08
+    - _Crest_NormalsStrengthOverall: 0.839
+    - _Crest_RefractionStrength: 1.05
+    - _Crest_SSSEnabled: 0
+    - _Crest_ShadowsAffectsAmbientFactor: 0.624
+    - _Crest_ShadowsEnabled: 1
+    - _Crest_SmoothnessFar: 0.659
+    - _Crest_SmoothnessFarDistance: 5127
+    - _Cull: 1
     - _CullMode: 0
     - _CullModeForward: 0
     - _DstBlend: 10
@@ -81,9 +103,13 @@ Material:
     - _QueueControl: 0
     - _RefractionModel: 0
     - _SrcBlend: 5
+    - _SrcBlendAlpha: 1
+    - _Surface: 1
     - _ZTestGBuffer: 3
     - _ZWrite: 1
     m_Colors:
+    - _Crest_Absorption: {r: 1.7071835, g: 0.6655005, b: 0.3510582, a: 1}
+    - _Crest_AbsorptionColor: {r: 0.2703364, g: 0.60054135, b: 0.764151, a: 0.20392157}
     - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
