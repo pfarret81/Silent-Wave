@@ -5015,6 +5015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tutorial Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1503989109714432937, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3960868284476806768, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -15549,10 +15553,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4002813991051081337, guid: 2d696db166223b744aca44fcf25f6761, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4057736262643823407, guid: 2d696db166223b744aca44fcf25f6761, type: 3}
       propertyPath: UI
       value: 
       objectReference: {fileID: 692397219}
+    - target: {fileID: 8319534580262087669, guid: 2d696db166223b744aca44fcf25f6761, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1390231334566836926}
+    - target: {fileID: 8319534580262087669, guid: 2d696db166223b744aca44fcf25f6761, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1390231334566836926}
     - target: {fileID: 8385430517808397239, guid: 2d696db166223b744aca44fcf25f6761, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.29344
@@ -15602,6 +15618,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d696db166223b744aca44fcf25f6761, type: 3}
+--- !u!82 &1390231334566836926 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3401298697761104536, guid: 2d696db166223b744aca44fcf25f6761, type: 3}
+  m_PrefabInstance: {fileID: 1390231334566836921}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3409566788773364300
 MonoBehaviour:
   m_ObjectHideFlags: 0
