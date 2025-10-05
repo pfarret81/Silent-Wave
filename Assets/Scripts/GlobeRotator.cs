@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class GlobeRotator : UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
@@ -7,6 +8,7 @@ public class GlobeRotator : UnityEngine.XR.Interaction.Toolkit.Interactables.XRG
     public float rotationMultiplier = 1.5f;   // sensibilité rotation
     public float inertiaFactor = 1.5f;        // amplification de l’inertie
     public float damping = 2f;                // ralentissement
+    public float initialRotation = -10f;
 
     private Transform interactorTransform;
     private Quaternion lastRotation;
@@ -34,6 +36,11 @@ public class GlobeRotator : UnityEngine.XR.Interaction.Toolkit.Interactables.XRG
 
     void Update()
     {
+        if (angularVelocity.magnitude < Math.Abs(initialRotation))
+        {
+            angularVelocity = new Vector3(0f, initialRotation, 0f);
+        }
+
         if (isGrabbed && interactorTransform != null)
         {
             // Calculer la différence de rotation entre frames
