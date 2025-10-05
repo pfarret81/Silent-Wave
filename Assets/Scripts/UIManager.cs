@@ -1,3 +1,5 @@
+using System.Runtime.CompilerServices;
+using Unity.Properties;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour

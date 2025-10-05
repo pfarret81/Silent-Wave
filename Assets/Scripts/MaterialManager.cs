@@ -1,6 +1,8 @@
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
-public class MaterialManager : MonoBehaviour
+[RequireComponent(typeof(UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable))] // Ensures there's an interactable component
+public class VRMaterialManager : MonoBehaviour
 {
     [Header("Materials")]
     public Material idleMaterial;
@@ -10,14 +12,52 @@ public class MaterialManager : MonoBehaviour
     [Header("References")]
     public SkinnedMeshRenderer bodyRenderer; // Reference to the child's SkinnedMeshRenderer
 
-    void Awake()
+    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable interactable;
+
+    private void Awake()
     {
+        interactable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable>();
+
+        // Assign idle material initially
         if (bodyRenderer != null && idleMaterial != null)
             bodyRenderer.material = idleMaterial;
         else
-            Debug.LogWarning("MaterialApplier: Missing bodyRenderer or idleMaterial reference.");
+            Debug.LogWarning("VRMaterialManager: Missing bodyRenderer or idleMaterial reference.");
+
+        // Subscribe to XR interaction events
+        interactable.hoverEntered.AddListener(OnHoverEntered);
+        interactable.hoverExited.AddListener(OnHoverExited);
+        interactable.selectEntered.AddListener(OnSelectEntered);
     }
 
+    private void OnDestroy()
+    {
+        // Unsubscribe to avoid memory leaks
+        if (interactable != null)
+        {
+            interactable.hoverEntered.RemoveListener(OnHoverEntered);
+            interactable.hoverExited.RemoveListener(OnHoverExited);
+            interactable.selectEntered.RemoveListener(OnSelectEntered);
+        }
+    }
+
+    // XR Events
+    private void OnHoverEntered(HoverEnterEventArgs args)
+    {
+        Hovering();
+    }
+
+    private void OnHoverExited(HoverExitEventArgs args)
+    {
+        Idle();
+    }
+
+    private void OnSelectEntered(SelectEnterEventArgs args)
+    {
+        OnClick();
+    }
+
+    // Material functions
     public void Hovering()
     {
         if (bodyRenderer != null && hoveringMaterial != null)
@@ -34,17 +74,5 @@ public class MaterialManager : MonoBehaviour
     {
         if (bodyRenderer != null && idleMaterial != null)
             bodyRenderer.material = idleMaterial;
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-            OnClick();
-
-        if (Input.GetKeyDown(KeyCode.T))
-            Idle();
-
-        if (Input.GetKeyDown(KeyCode.Y))
-            Hovering();
     }
 }
